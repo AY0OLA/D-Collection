@@ -1,0 +1,128 @@
+.nav {
+  background-color: color-mix(in srgb, pink, transparent 90%);
+  padding: 25px;
+  .containers {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+
+    div {
+      .navbar {
+        font-size: clamp(1.4rem, 3vw, 0.9rem);
+        font-weight: 800;
+      }
+    }
+    .collapses {
+      display: flex;
+      .navbarnav {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        .navitem {
+          margin-left: 0.8rem;
+
+          .navlink {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #000;
+          }
+        }
+      }
+    }
+    .dflex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn {
+        margin-left: 0.9rem;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background: transparent;
+        font-size: 1.1rem;
+        cursor: pointer;
+
+        &:hover {
+          background: #fff;
+          border: none;
+        }
+        .nav-link {
+          display: flex;
+          text-align: center;
+          text-decoration: none;
+          color: #000;
+          .gap {
+            margin-right: 0.2rem;
+          }
+          &:hover {
+            background: #fff;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .icon {
+    display: none;
+  }
+}
+@media (max-width: 777px) {
+  .nav {
+    position: relative;
+
+    .collapses {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: color-mix(in srgb, pink, transparent 60%);
+      width: 50%;
+      padding: 50px;
+      transition: 1s ease;
+      top: -100rem;
+      right: 2rem;
+      .icon {
+        font-size: 1.9rem;
+        color: #000;
+        cursor: pointer;
+        margin-right: 24rem;
+      }
+
+      .navbarnav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .navitem {
+          margin-top: 0.6rem;
+          font-size: 2rem;
+        }
+      }
+      .dflex {
+        flex-direction: column;
+        text-align: center;
+        .btn {
+          font-size: 1.3rem;
+          width: 100%;
+          margin-top: 0.8rem;
+
+          .nav-link {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .icon {
+      display: inline;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    .active {
+      top: 5.5rem;
+    }
+  }
+}

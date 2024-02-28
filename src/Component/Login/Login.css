@@ -1,0 +1,143 @@
+:root {
+  --Secondary: #525256;
+  --White: #fff;
+  --Gray-02: #878787;
+  --Default-Black: #191919;
+  --Primary-color: #299d91;
+  --black: #000;
+}
+.Login {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+  .Log-out {
+    padding: 0 4rem;
+    width: 437px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200%;
+    min-height: 430px;
+    overflow: hidden;
+
+    h1 {
+      font-weight: 600;
+      color: var(--Primary-color);
+    }
+    .content {
+      margin-top: 1.5rem;
+      .Input {
+        text-align: left;
+
+        .input {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1rem;
+        }
+        .password {
+          .flex {
+            a {
+              color: var(--Primary-color);
+            }
+          }
+        }
+      }
+      .sign {
+        text-align: left;
+        color: var(--Gray-02);
+        margin-top: 1rem;
+        font-size: 0.8rem;
+
+        & a {
+          color: var(--Primary-color);
+          font-weight: 600;
+          text-decoration: none;
+          margin-left: 3px;
+        }
+      }
+      .login {
+        background-color: var(--Primary-color);
+        width: 100%;
+        margin-top: 0.9rem;
+        padding: 0.1rem 0.9rem;
+        & a {
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: var(--White);
+          font-weight: 500;
+        }
+      }
+      .option {
+        margin-top: 1rem;
+        color: var(--Secondary);
+
+        .line1 {
+          width: 80px;
+          height: 0;
+          transform: translate(0rem, 0.8rem);
+          border: 1px solid var(--Secondary);
+        }
+        .OPSign {
+          font-size: 0.9rem;
+          padding: 0 0.0909rem;
+        }
+      }
+      .google {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        background-color: var(--Gray-02);
+        padding: 0.5rem;
+        width: 100%;
+        span {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+        .icon {
+          margin-right: 1rem;
+          font-size: 1.2rem;
+        }
+      }
+      .create {
+        padding-top: 1rem;
+        .sign-up {
+          text-decoration: none;
+          color: var(--Primary-color);
+          font-weight: 600;
+        }
+      }
+    }
+    .sign {
+      text-align: left;
+      display: flex;
+      color: var(--Gray-02);
+      margin-top: 0.9rem;
+      input[type="checkbox"] {
+        accent-color: var(--Primary-color);
+        color: #fff;
+        background-color: #fff;
+        cursor: pointer;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .follow {
+      display: flex;
+      flex-direction: column;
+      .Acc {
+        font-weight: 800;
+        font-size: 1.3rem;
+      }
+      .link {
+        margin-top: 0.9rem;
+      }
+    }
+  }
+}
