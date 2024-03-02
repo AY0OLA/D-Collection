@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     margin: 2rem 0;
     justify-content: center;
+    gap: 10px;
 
     .btn {
       margin-left: 0.9rem;
@@ -74,6 +75,20 @@
     .Products {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+@media (max-width: 441px) {
+  .shopTitle {
+    margin: 4rem 0.9rem;
+    .Products {
+      .product {
+        max-width: 250px;
+
+        img {
+          width: 180px;
+        }
+      }
     }
   }
 }
